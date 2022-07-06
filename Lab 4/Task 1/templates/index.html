@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <style>
+        label {
+            display: block;
+        }
+        textarea {
+            display: block;
+        }
+        form {
+            width: 20rem;
+        }
+        legend {
+            text-align: center;
+        }
+        fieldset {
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form method="post" action="#" >
+                <fieldset class="fieldset__kind">
+                    <legend>Registrera medlemsuppgifter</legend>
+                    <label>Betalsätt: *
+                        <select name='paymenttype'>
+                            <option value="Val">Välj betalsätt</option>
+                            <option value="Kreditkort">Kreditkort</option>
+                            <option value="Swish">Swish</option>
+                            <option value="Kontant">Kontant</option>
+                        </select>
+                    </label>
+                    <br>
+                    <form action="/action_page.php">
+                        <label>Förnamn: *</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                        <label>Efternamn: *</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                        <label>Adress: *</label>
+                        <input type="text" id="adress" name="adress" required>
+                        <label>Postnummer: *</label>
+                        <input type="text" id="zipcode" name="zipcode" required>
+                        <label>Ort: *</label>
+                        <input type="text" id="place" name="place" required>
+                        <label>Mobilnummer: *</label>
+                        <input type="text" id="mobilenr" name="mobilenr" required>
+                        <label>E-mail: *</label>
+                        <input type="text" id="email" name="email" required>
+                        <label>Password: *</label>
+                        <input type="password" name="password" placeholder="************" required>
+                    </form>
+                    <p><i>* Obligatorisk uppgift</i></p>
+                    <label>
+                        Erbjudanden via e-post: <input type="checkbox" name="offers" value="true" />
+                    </label>
+                    <p>E-postformat:
+                        <label>Html: <input type="radio" name="format" value="HTML" /></label>
+                        <label>Text: <input type="radio" name="format" value="Text" /></label>
+                    </p>
+                    <label>
+                        Dina komentarer:
+                        <textarea cols="20" rows="3" name="comment" placeholder="Skriv här..." ></textarea>
+                    </label>
+                    <input type="reset" class="reset__button" value="Reset">
+                    <input type="submit" class="submit" value="Submit">
+                </fieldset>
+        </form>
+    </div>
+
+<script>
+
+</script>
+</body>
+</html>
