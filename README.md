@@ -1,4 +1,4 @@
 # Script-Programming
-Skriptprogrammering
+Skript programmering
 
 Python
