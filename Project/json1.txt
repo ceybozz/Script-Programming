@@ -1,0 +1,7 @@
+https://www.tutorialspoint.com/cryptography_with_python/index.htm
+{
+	"Algorithm": "reverse, ceasar or rovar",
+	"Plaintext": "Text to encrypt!",
+	"Shiftpattern": "int, for example 15",
+	"Ciphertext": "!tpyrced ot txeT"
+}
